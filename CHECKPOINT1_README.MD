@@ -1,9 +1,9 @@
 # Group 1 Project Checkpoint 1
 
-## <ins>Group 1 members:<ins> 
-* $\color{green}{Taylor\ Bellfield}$
-* $\color{green}{Lily\ Flynn}$
-* $\color{green}{Lorri\ Williams}$
+### <ins>**Group Members:**<ins> 
+* $\color{pink}{Taylor\ Bellfield}$
+* $\color{pink}{Lily\ Flynn}$
+* $\color{pink}{Lorri\ Williams}$
 
 ## ***Progress Report***
 We previously downloaded the Iowa ACS and liquor sales datasets and loaded them into the repository. Once the data were uploaded, we merged the data by each geographical category, resulting in three datasets. For the data visualization tasks, we will use Tableau. Each member will create one dashboard with all the required visualizations for each merged dataset. 
@@ -34,9 +34,11 @@ Finally, we will generate a scatterplot of per capita sales vs. per capita consu
 * Figuring out the best way to merge the ACS and liquor sales data was challenging, as we were unsure if R could merge datasets with different rows with the same category. For example, the ACS data has one row associated with each state, whereas there are ten rows for each liquor category in the liquor sales data. We eventually figured this out, but it took longer than anticipated. 
 
 ### ***Contributions of each team member***
-* <ins>**Lily**<ins> located and downloaded all relevant data files and determined the appropriate visualizations for the objectives. She will create the Tableau dashboard and visualizations for Iowa **cities** for the next checkpoint.
-* <ins>**Taylor**<ins> scheduled group meetings, determined the appropriate visualizations for the objectives, and drafted README files based on group discussions. He will create the Tableau dashboard and visualizations for Iowa **counties** for the next checkpoint. 
-* <ins>**Lorri**<ins> created the GitHub repository and wrote the R code to merge the datasets. She will create the Tableau dashboard and visualizations for Iowa **zip codes** for the next checkpoint.
+* Lily located and downloaded all relevant data files and determined the appropriate visualizations for the objectives. She will create the Tableau dashboard and visualizations for Iowa ***cities*** for the next checkpoint.
 
-## ***Next Steps***
+* Taylor scheduled group meetings, determined the appropriate visualizations for the objectives, and drafted README files based on group discussions. He will create the Tableau dashboard and visualizations for Iowa ***counties*** for the next checkpoint. 
+
+* Lori created the GitHub repository and wrote the R code to merge the datasets. She will create the Tableau dashboard and visualizations for Iowa ***zip codes*** for the next checkpoint.
+
+## <ins>Next Steps<ins>
 Once all dashboards are complete, we will upload the Tableau files to the repository for cross-checking. If all visualizations are accurate and consistent, we will combine the three dashboards into one workbook and meet to discuss our interpretations and document findings. From there, we will draft the report in a README file and plan our presentation. The presentation will be recorded on Zoom using presentation mode in the Tableau desktop app. 
