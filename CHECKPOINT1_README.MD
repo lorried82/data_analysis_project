@@ -6,7 +6,7 @@
 * $\color{pink}{Lorri\ Williams}$
 
 ## <ins>Progress Report<ins>
-We previously downloaded the Iowa ACS and liquor sales datasets and loaded them into the repository. Once the data were uploaded, we merged the data by each geographical category, resulting in three datasets. For the data visualization tasks, we will use Tableau. Each member will create one dashboard with all the required visualizations for each merged dataset. 
+We previously downloaded the Iowa ACS and liquor sales datasets and loaded them into the repository. Once the datasets were uploaded, we merged the data by each geographical category, resulting in three datasets. For the data visualization tasks, we will use Tableau. Each member will create one dashboard with all the required visualizations for each merged dataset. 
 
 Below is a list of the visualizations we will create, organized by objective:
 
