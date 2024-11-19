@@ -4,8 +4,8 @@ There are however, several requirements that allow for fair grading while simula
 Your project should tell an analytical story, however, your narrative should remain unbiased to any particular decisions.
 
 1. Introduction (5pts):
-   - Provide context regarding your decision maker, organization, and overall decision climate. State your research question.
-   - Explain how policy decisions will affect your organization and the broader community.
+  - Provide context regarding your decision maker, organization, and overall decision climate. State your research question.
+  - Explain how policy decisions will affect your organization and the broader community.
      
 2. Data summary (5 pts):
   - Provide a short description of the nature of the provided data set and explain how these characteristics affect your analysis methodology.
