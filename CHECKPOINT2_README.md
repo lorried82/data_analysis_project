@@ -1,3 +1,42 @@
+# Group 1 Project Checkpoint 1
+
+### <ins>**Group Members:**<ins> 
+* $\color{purple}{Taylor\ Bellfield}$
+* $\color{purple}{Lily\ Flynn}$
+* $\color{purple}{Lorri\ Williams}$
+
+## <ins>Progress Report<ins>
+We've divided the data analysis into three datasets: cities, counties, and zip codes. Each team member is responsible for creating analyses and visualizations in Tableau. This includes calculating 'per capita sales' (SUM([Sales in Dollars]) / SUM([Population])) and 'per capita consumption' (SUM([Sales by Volume]) / SUM([Population])). We’ll use these to create map visualizations. As we analyze the data, our decisions and policies will influence inventory adjustments for the next fiscal year and inform recommendations for distribution capacity changes based on sales and consumption data.
+
+Below is a list of the visualizations we will create, organized by objective:
+
+#### <ins>1. Identify the distribution of per capita sales across geographies.<ins> 
+
+First, we will create a new variable in Tableau called “per capita sales,” calculated using SUM([Sales in Dollars]) / SUM([Population]). Then, we will generate Iowa maps showing how per capita sales are distributed across the state by city, county, and zip code. Each geographical section will be colored according to the magnitude of sales. With further analysis of this data, we will also determine if there are any outliers and create scatterplots accordingly.
+
+
+### ***Victories***
+* GitHub conitnues to make it easy to collaborate and share data and files.
+* Adding the .twb files is easy to do in Github and diplays as XML.
+* We added screenshots of the Tableau visualizations to collaborate further on data analysis and formatting.
+
+### ***Challenges***
+* There is still a learning curve with this technology and workflow.
+* We continue to have some weird permission errors when trying to upload files or post content.
+
+### ***Contributions of each team member***
+* Lily located and downloaded all relevant data files and determined the appropriate visualizations for the objectives. She will create the Tableau dashboard and visualizations for Iowa ***cities*** for the next checkpoint.
+
+* Taylor scheduled group meetings, determined the appropriate visualizations for the objectives, and drafted README files based on group discussions. He will create the Tableau dashboard and visualizations for Iowa ***counties*** for the next checkpoint. 
+
+* Lori created the GitHub repository and wrote the R code to merge the datasets. She will create the Tableau dashboard and visualizations for Iowa ***zip codes*** for the next checkpoint.
+
+## <ins>Next Steps<ins>
+As we collaborate for our visualizations in Tableau, we will push and pull files to the repository/locally for cross-checking. If all visualizations are accurate and consistent, we will combine the three dashboards into one workbook and meet to discuss our interpretations and document findings. From there, we will draft the report in a README file and plan our presentation. The presentation will be recorded on Zoom using presentation mode in the Tableau desktop app.
+
+
+Below are the details for what is needed in the Final Report
+___________________________________________________________________________________________________
 Report Content
 As graduate students, you are given a wide level of autonomy in your analysis and report writing.
 There are however, several requirements that allow for fair grading while simulating a real world analysis project.
