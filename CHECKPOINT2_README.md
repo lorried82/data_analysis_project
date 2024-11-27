@@ -1,4 +1,4 @@
-# Group 1 Project Checkpoint 1
+# Group 1 Project Checkpoint 2
 
 ### <ins>**Group Members:**<ins> 
 * $\color{purple}{Taylor\ Bellfield}$
@@ -35,7 +35,7 @@ First, we will create a new variable in Tableau called “per capita sales,” c
 As we collaborate for our visualizations in Tableau, we will push and pull files to the repository/locally for cross-checking. If all visualizations are accurate and consistent, we will combine the three dashboards into one workbook and meet to discuss our interpretations and document findings. From there, we will draft the report in a README file and plan our presentation. The presentation will be recorded on Zoom using presentation mode in the Tableau desktop app.
 
 
-Below are the details for what is needed in the Final Report
+### <ins>Below are the details for what is needed in the Final Report<ins>
 ___________________________________________________________________________________________________
 Report Content
 As graduate students, you are given a wide level of autonomy in your analysis and report writing.
