@@ -19,28 +19,28 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 
 ### <ins>Here are quick summaries for the three datasets:<ins> 
 
-|Merged_Cities_Data|
-|---|---|
-|Field | Type|
-|---|---|
-|city| character|
-|category| character|
-|sale.dollars| integer|
-|sale.volume| integer|
-|high.school| numeric|
-|bachelor| numeric|
-|unemployment| numeric|
-|income| integer|
-|population| integer|
-|pop.white| integer|
-|pop.black| integer|
-|pop.indian| integer|
-|pop.asian| integer|
-|pop.hawai| integer|
-|pop.other| integer|
-|pop.multi| integer|
-|Total size of the dataset: 328.7 Kb|
-|Total number of rows in the dataset: 3693|
+| Merged_Cities_Data |
+| --- | --- |
+| Field | Type |
+| --- | --- |
+| city | character |
+| category | character |
+| sale.dollars | integer |
+| sale.volume | integer |
+| high.school | numeric |
+| bachelor | numeric |
+| unemployment | numeric |
+| income | integer |
+| population | integer |
+| pop.white | integer |
+| pop.black | integer |
+| pop.indian | integer |
+| pop.asian | integer |
+| pop.hawai | integer |
+| pop.other | integer |
+| pop.multi | integer |
+| Total size of the dataset: 328.7 Kb |
+| Total number of rows in the dataset: 3693 |
 
 |Merged_County_Data|
 |---|---|
