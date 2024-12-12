@@ -38,7 +38,6 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-| --- | ---| 
 **Total size of the dataset: $\color{Red}{328.7\ Kb}$**
 **Total number of rows in the dataset: $\color{Red}{3693}$**
 
@@ -61,7 +60,6 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-| --- | --- |
 **Total size of the dataset: $\color{Red}{89.2\ Kb}$**
 **Total number of rows in the dataset: $\color{Red}{980}$**
 
@@ -84,7 +82,6 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-| --- | --- |
 **Total size of the dataset: $\color{Red}{325.3\ Kb}$**
 **Total number of rows in the dataset: $\color{Red}{4123}$**
 
