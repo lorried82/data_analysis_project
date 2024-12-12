@@ -101,12 +101,13 @@ The zip code dataset details liquor sales categorized by alcohol type, along wit
 This dataset aggregates liquor sales data at the county level, organized by alcohol category with sales volume and dollar amounts. It is supplemented by socio-economic indicators, such as education, unemployment, income, total population, and racial demographics, offering a broader view of trends across counties.
 
 ### Limitations
-Perhaps it’s also important to note that using a full outer merge in Tableau was crucial to ensure complete data integration. Without it, the merged dataset could be incomplete. In other words, when combining ACS and annual sales data, it was essential to use a full outer merge because some ACS geographies might not have recorded liquor sales, and some sales geographies might not have corresponding ACS data.
+Perhaps it’s also important to note that using a full outer join in R was crucial to ensure complete data integration. Without it, the merged dataset could be incomplete. In other words, when combining ACS and annual sales data, it was essential to use a full outer merge because some ACS geographies might not have recorded liquor sales, and some sales geographies might not have corresponding ACS data.
 
 Ultimately, combining the liquor sales data with ACS data helped to provide a richer context for analysis, but it did still result in some limitations to consider with respect to our analysis methodology. As mentioned, the sampling error in ACS data introduces uncertainty, particularly for small geographic areas. Temporal mismatches arise because liquor sales data is aggregated annually, while ACS data is collected continuously and reported over different periods. Geographic inconsistencies can occur due to differing boundaries, and both datasets' lack of granularity can obscure finer details. And lastly, contextual gaps exist as ACS data may not capture all factors influencing liquor sales, such as cultural preferences or local regulations. 
 
 ### Descriptive Statistics
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/desc_stats.png”  width="1028">
+![Local image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/desc_stats.png)
+
 **Figure 1.** Descriptive statistics for key variables across geographies by Iowa zip codes, cities, and counties in 2022. Median and IQR values are reported to account for data skewness to ensure most accurate reporting of averages. Note: IQR = interquartile range.
 
 # Data Analytics
@@ -128,48 +129,58 @@ Our primary aim was to identify trends in liquor sales across Iowa geographies t
 
 ### Questions of Interest
 Note: If you would like to see the interactive versions of the visualizations described below, please follow the link to our Tableau Public page (<https://public.tableau.com/app/profile/taylor.bellfield/vizzes>) 
-<ins> 1. Identify the distribution of per capita sales across geographies.<ins>
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/city_map.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/county_map.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/zip_map.png”  width="1028">
+
+#### <ins>1. Identify the distribution of per capita sales across geographies.<ins>
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/city_map.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/county_map.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/zip_map.png)
+
 **Figure 2a-c.** Geospatial maps of per capita liquor sales across Iowa cities, counties, and zip codes.
 
 Median per capita sales for Iowa zip codes, cities, and counties were 3.6, 4.0, and 3.1, respectively. We reported the median because per capita sales data was extremely right-skewed, given that per capita sales were much higher in some areas compared to the majority of locales. For example, among the counties with the highest per capita sales, Dickinson had the highest value at 22.8. Similarly, for cities, Bevington had the highest per capita sales at 83.94. Finally, for zip codes, we see that 50033 had the most substantial per capita sales value at 110.6. Based on the distributions, it appears that geographies in the central, eastern, and northern regions of Iowa have the highest per capita sales, with specific cities, counties, and zip codes driving these patterns.
 
 #### <ins>2. Identify the ranks of the top 10 geographies for per capita consumption across every liquor category.<ins>
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/city_heat.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/county_heat.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/zip_heat.png”  width="1028">
+<![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/city_heat.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/county_heat.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/zip_heat.png)
+
 **Figure 3a-c.** Heat maps for the geographies with the top 10 highest per capita liquor sales for Iowa cities, counties, and zip codes.
 
 For the top 10 geographies in each liquor category, we see interesting patterns emerge regarding the types of alcohol consumed and their effect on per capita sales. As we observed in the geospatial map for cities, Bevington came out on top in per capita sales. However, the heat map tells a slightly different story, with Bevington having the highest per capita consumption in only two categories: Whisky and Vodka. Going down the rows, it becomes evident that Mount Vernon has the top per capita consumption in the most categories, including miscellaneous liquors, tequila, and distilled spirits. Furthermore, despite having the highest overall per capita sales, Bevtinton’s per capita consumption for Schnapps and Brandy ranked tenth, and there is no sales data for distilled spirits and amaretto. For the top 10 counties, a similar pattern emerges, where there are specific liquor categories with higher per capita consumption than others. The exception in this case is Dickinson, which ranks highest in all liquor categories except Brandy and distilled spirits. Zip code data was similarly distributed, where zip codes 50033, 52401, and 50314 held the top rankings for each liquor category. Based on heat maps, we can identify that specific kinds of liquors are popular in certain geographies, helping to further explain the trends described in part 1 of the analysis.
 
 #### <ins>3. Determine if there are any outliers that have high per capita sales in only one specific liquor category.<ins>
 
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/city_outliert.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/county_outlier.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/zip_outlier.png”  width="1028">
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/city_outlier.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/county_outlier.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/zip_outlier.png)
+
 **Figure 4a-c.** Box-and-whisker plots for the geographies with the top 10 highest per capita liquor sales for Iowa cities, counties, and zip codes.
 
 Further extending our findings from part 2, part 3 allowed us to identify which liquor categories drove per capita sales across the top 10 geographies. We see that Bevington remains highest in the ranking, but interestingly, does not have any outlying liquor categories. In fact, none of the top 4 cities have outliers. It is not until Bancroft, Floyd, Fort Atkinson, and Holy Cross that we see Whisky stand out as the only outlier among the top 10 cities. For counties, we see a similar trend. Since Dickinson was ranked highest among counties in almost all categories, there were nbo outliers in its distribution of per capita sales. However, in addition to Whisky, we see that several counties had vodka as an outlier, namely Polk, Johnson, and Scott. These patterns were further asserted by the distributions for top 10 zip codes, where whisky aand vodka were the only outliers across several zip codes.
 
 ### Excursion Analysis
-The Stata log and do files associated with the analyses are available upon request, but were omitted from the report for readability. 
+*Note: The Stata log and do files associated with the analyses are available upon request, but were omitted from the report for readability.*
 
-####Research question:
-*What is the relationship between unemployment and total and per capita liquor sales?*
-   
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/glm_table.png”  width="1028">
-<img src=”https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/var_sqmeans.png”  width="1028">
-**Figure 5a-b.** Results of the generalized linear modeling show the gamma log model to be superior, given the lower AIC and BIC values and the coefficients indicating the relationship with total and per capita sales. A graph of the variance is plotted against the squared means of sales in dollars. 
+#### Research question: *What is the relationship between unemployment and total and per capita liquor sales?* 
 
-Given the skewed distributions of the independent variable (unemployment) and the two dependent variables (total and per capita sales), we chose to run a generalized linear model instead of linear regression to enhance the accuracy of our estimations. To conduct the generalized linear model, we began by checking the relationship between variance and squared means for sales to determine the best model to use. We plotted the variance against the squared means, which confirmed that a linear regression model was not appropriate for determining the relationship between unemployment and sales. We then ran two models to determine which generalized linear model would produce the best fit: we first ran a gamma log model and then a Gaussian log model, finding that the gamma log model had the best fit for both outcomes (see Figure 5).
+![Local Image](images/unemploy_hist.png)
+![Local Image](images/percapsales_hist.png)
+![Local Image](images/totsales_hist.png)
+
+**Figure 5a-c.** Histograms for unemployment, total sales, and per capita sales showing right skewness.
+
+Given the skewed distributions of the independent variable (unemployment) and the two dependent variables (total and per capita sales), we chose to run a generalized linear model instead of linear regression to enhance the accuracy of our estimations. To conduct the generalized linear model, we began by checking the relationship between variance and squared means for sales to determine the best model to use. We plotted the variance against the squared means, which confirmed that a linear regression model was not appropriate for determining the relationship between unemployment and sales. We then ran two models to determine which generalized linear model would produce the best fit: we first ran a gamma log model and then a Gaussian log model, finding that the gamma log model had the best fit for both outcomes.
+
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/glm_table.png)
+![Local Image](https://github.com/lorried82/data_analysis_project/blob/Final-Report/images/var_sqmeans.png)
+
+**Figure 6a-b.** Results of the generalized linear modeling show the gamma log model to be superior, given the lower AIC and BIC values and the significant coefficients indicating the relationship with total and per capita sales. Linear relationship between variance and sqaured means of total sales indicates gamma log model may be most appropriate.
 
 Based on the gamma log model, we can conclude that, controlling for education and income, a higher unemployment rate is associated with a 20% increase in total liquor sales and a 4% increase in per capita liquor sales. In these models, zip codes with higher school graduation rates had lower total sales but did not differ from other geographies in per capita sales. Zip codes with higher proportions of residents with bachelor's degrees had higher total and per capita sales. Higher average median income was associated with slight reductions in total and per capita sales.
 
 # Conclusion
-Based on our analyses, per capita sales appear concentrated in the central, eastern, and northern regions of Iowa with notable variations across cities, counties, and zip codes. While cities like Bevington appeared to have the highest overall per capita sales across cities, per capita consumption data revealed that this trend was driven largely by whiskey and vodka. It would be critical to increase liquor sales distribution in the aforementioned regions and locales. Further analysis of the income distributions in these regions is warranted given the results of the gamma log model, as it appearts that higher income areas with lower unemployment may not consume as much liquor. Therefore, it may be worthwhile to market liquors as high-end to target consumers in morte affluent parts of the state with lower per capita consumptoin.
+Based on our analyses, per capita sales appear concentrated in the central, eastern, and northern regions of Iowa with notable variations across cities, counties, and zip codes. While cities like Bevington appeared to have the highest overall per capita sales across cities, per capita consumption data revealed that this trend was driven largely by whiskey and vodka. It would be critical to increase liquor sales distribution in the aforementioned regions and locales. Further analysis of the income distributions in these regions is warranted given the results of the gamma log model, as it appearts that higher income areas with lower unemployment may not consume as much liquor. Therefore, it may be worthwhile to market liquors as high-end to target consumers in morte affluent parts of the state with lower per capita consumption.
 
 # Policy Recommendations
-A primary goal for the distribution and marketing strategy will be increasing distribution by 20% for whisky and vodka across the central, eastern, and northern regions of Iowa. Specifically, these efforts should be targeted at high-sales areas like Bevington, Mount Vernon, and Dickinson County. Additionally, the Senior VP would benefit from optimizing the mix of inventory based on regional preferences. Whisky and vodka were main contenders for most areas, but here were specific exceptions that may be worthwhile to explore further. Finally, enhancing marketing efforts in areas of higher median income, higher education, and lower unemployment may be critical for continued success given that these areas tend to have lower per capita and total sales than lower-resourced areas. To enhance public trust, we may also way to engage in public policy campaigns reudcing excessive alcohol consumption in lower-resourced areas of the state.
+A primary goal for the distribution and marketing strategy will be increasing distribution by 20% for whisky and vodka across the central, eastern, and northern regions of Iowa. Specifically, these efforts should be targeted at high-sales areas like Bevington, Mount Vernon, and Dickinson County. Additionally, the Senior VP would benefit from optimizing the mix of inventory based on regional preferences. Whisky and vodka were main contenders for most areas, but there were specific exceptions that may be worthwhile to explore further. Finally, enhancing marketing efforts in areas of higher median income, higher education, and lower unemployment may be critical for continued success given that these areas tend to have lower per capita and total sales than lower-resourced areas. To enhance public trust, we may also way to engage in public policy campaigns reudcing excessive alcohol consumption in lower-resourced areas of the state.
 
