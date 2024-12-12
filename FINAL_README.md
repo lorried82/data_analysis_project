@@ -19,7 +19,7 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 
 ### <ins>Here are quick summaries for the three datasets:<ins> 
 
-**$\color\{Blue}{Merged_Cities_Data}$**
+**$\color\{Green}{Merged\ Cities\ Data}$**
 | Field | Type |
 | --- | --- |
 | city | character |
@@ -38,54 +38,55 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
+| --- | ---| 
 **Total size of the dataset: $\color{Red}{328.7\ Kb}$**
 **Total number of rows in the dataset: $\color{Red}{3693}$**
 
-|Merged_County_Data|
-|---|---|
-|Field| Type|
-|---|---|
-|county| character|
-|category| character|
-|sale.dollars| integer|
-|sale.volume| integer|
-|high.school| numeric|
-|bachelor| numeric|
-|unemployment| numeric|
-|income| integer|
-|population| integer|
-|pop.white| integer|
-|pop.black| integer|
-|pop.indian| integer|
-|pop.asian| integer|
-|pop.hawai| integer|
-|pop.other| integer|
-|pop.multi| integer|
-|Total size of the dataset: 89.2 Kb|
-|Total number of rows in the dataset: 980|
+**$\color\{Green}{Merged\ County\ Data}$**
+| Field | Type|
+| --- | --- |
+| county | character |
+| category | character |
+| sale.dollars | integer |
+| sale.volume | integer |
+| high.school | numeric |
+| bachelor | numeric |
+| unemployment | numeric |
+| income | integer |
+| population | integer |
+| pop.white | integer |
+| pop.black | integer |
+| pop.indian | integer |
+| pop.asian | integer |
+| pop.hawai | integer |
+| pop.other | integer |
+| pop.multi | integer |
+| --- | --- |
+**Total size of the dataset: $\color{Red}{89.2\ Kb}$**
+**Total number of rows in the dataset: $\color{Red}{980}$**
 
-|Merged_ZipCode_Data|
-|---|---|
-|Field| Type|
-|---|---|
-|zipcode| integer|
-|category| character|
-|sale.dollars| integer|
-|sale.volume| integer|
-|high.school| numeric|
-|bachelor| numeric|
-|unemployment| numeric|
-|income| integer|
-|population| integer|
-|pop.white| integer|
-|pop.black| integer|
-|pop.indian| integer|
-|pop.asian| integer|
-|pop.hawai| integer|
-|pop.other| integer|
-|pop.multi| integer|
-|Total size of the dataset: 325.3 Kb|
-|Total number of rows in the dataset: 4123|
+**$\color\{Green}{Merged\ ZipCode\ Data}$**
+| Field| Type|
+| ---|---|
+| zipcode | integer |
+| category | character |
+| sale.dollars | integer |
+| sale.volume | integer |
+| high.school | numeric |
+| bachelor | numeric |
+| unemployment | numeric |
+| income | integer |
+| population | integer |
+| pop.white | integer |
+| pop.black | integer |
+| pop.indian | integer |
+| pop.asian | integer |
+| pop.hawai | integer |
+| pop.other | integer |
+| pop.multi | integer |
+| --- | --- |
+**Total size of the dataset: $\color{Red}{325.3\ Kb}$**
+**Total number of rows in the dataset: $\color{Red}{4123}$**
 
 **<ins>City Dataset:<ins>**
 This dataset contains data on liquor sales by city, including categories of alcohol (e.g., whisky, vodka) with corresponding sales in dollars and volume. It also includes socio-economic and demographic variables such as high school and bachelor's degree attainment rates, unemployment rates, median income, total population, and racial breakdowns.
