@@ -38,8 +38,8 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-**Total size of the dataset: $\color{Red}{328.7\ Kb}$**
-**Total number of rows in the dataset: $\color{Red}{3693}$**
+| **Total size of the dataset | $\color{Red}{328.7\ Kb}$** |
+Total number of rows in the dataset | $\color{Red}{3693}$** |
 
 **$\color\{Green}{Merged\ County\ Data}$**
 | Field | Type|
@@ -60,8 +60,8 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-**Total size of the dataset: $\color{Red}{89.2\ Kb}$**
-**Total number of rows in the dataset: $\color{Red}{980}$**
+| **Total size of the dataset| $\color{Red}{89.2\ Kb}$** |
+| **Total number of rows in the dataset| $\color{Red}{980}$** |
 
 **$\color\{Green}{Merged\ ZipCode\ Data}$**
 | Field| Type|
@@ -82,8 +82,8 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-**Total size of the dataset: $\color{Red}{325.3\ Kb}$**
-**Total number of rows in the dataset: $\color{Red}{4123}$**
+| **Total size of the dataset| $\color{Red}{325.3\ Kb}$** |
+| **Total number of rows in the dataset| $\color{Red}{4123}$** |
 
 **<ins>City Dataset:<ins>**
 This dataset contains data on liquor sales by city, including categories of alcohol (e.g., whisky, vodka) with corresponding sales in dollars and volume. It also includes socio-economic and demographic variables such as high school and bachelor's degree attainment rates, unemployment rates, median income, total population, and racial breakdowns.
