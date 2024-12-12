@@ -92,7 +92,7 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 **<ins>City Dataset:<ins>**
 This dataset contains data on liquor sales by city, including categories of alcohol (e.g., whisky, vodka) with corresponding sales in dollars and volume. It also includes socio-economic and demographic variables such as high school and bachelor's degree attainment rates, unemployment rates, median income, total population, and racial breakdowns.
 
-**<ins>Zip Code Dataset::<ins>**
+**<ins>Zip Code Dataset:<ins>**
 The zip code dataset details liquor sales categorized by alcohol type, along with sales volume and revenue. It also captures demographic data, including education levels, unemployment rates, median income, total population, and racial composition within specific zip codes.
 
 **<ins>County Dataset:<ins>**
