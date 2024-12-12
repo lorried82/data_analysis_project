@@ -29,7 +29,7 @@ Perhaps it’s also important to note that using a full outer merge in Tableau w
 Ultimately, combining the liquor sales data with ACS data helped to provide a richer context for analysis, but it did still result in some limitations to consider with respect to our analysis methodology. As mentioned, the sampling error in ACS data introduces uncertainty, particularly for small geographic areas. Temporal mismatches arise because liquor sales data is aggregated annually, while ACS data is collected continuously and reported over different periods. Geographic inconsistencies can occur due to differing boundaries, and both datasets' lack of granularity can obscure finer details. And lastly, contextual gaps exist as ACS data may not capture all factors influencing liquor sales, such as cultural preferences or local regulations. 
 ### Descriptive Statistics
 
-!(images/descriptive_Statistics_image1.png)
+![](images/descriptive_Statistics_image1.png)
 
 
 # Data Analytics
