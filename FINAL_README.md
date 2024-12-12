@@ -91,8 +91,10 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 
 **<ins>City Dataset:<ins>**
 This dataset contains data on liquor sales by city, including categories of alcohol (e.g., whisky, vodka) with corresponding sales in dollars and volume. It also includes socio-economic and demographic variables such as high school and bachelor's degree attainment rates, unemployment rates, median income, total population, and racial breakdowns.
+
 **<ins>Zip Code Dataset::<ins>**
 The zip code dataset details liquor sales categorized by alcohol type, along with sales volume and revenue. It also captures demographic data, including education levels, unemployment rates, median income, total population, and racial composition within specific zip codes.
+
 **<ins>County Dataset:<ins>**
 This dataset aggregates liquor sales data at the county level, organized by alcohol category with sales volume and dollar amounts. It is supplemented by socio-economic indicators, such as education, unemployment, income, total population, and racial demographics, offering a broader view of trends across counties.
 Perhaps it’s also important to note that using a full outer merge in Tableau was crucial to ensure complete data integration. Without it, the merged dataset could be incomplete. In other words, when combining ACS and annual sales data, it was essential to use a full outer merge because some ACS geographies might not have recorded liquor sales, and some sales geographies might not have corresponding ACS data.
