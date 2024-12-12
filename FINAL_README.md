@@ -19,8 +19,7 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 
 ### <ins>Here are quick summaries for the three datasets:<ins> 
 
-| Merged_Cities_Data |
-| --- | --- |
+**$\color\{Blue}{Merged_Cities_Data}$**
 | Field | Type |
 | --- | --- |
 | city | character |
@@ -39,8 +38,8 @@ In an effort to derive more insightful conclusions, we merged the two datasets a
 | pop.hawai | integer |
 | pop.other | integer |
 | pop.multi | integer |
-| Total size of the dataset: 328.7 Kb |
-| Total number of rows in the dataset: 3693 |
+**Total size of the dataset: $\color{Red}{328.7\ Kb}$**
+**Total number of rows in the dataset: $\color{Red}{3693}$**
 
 |Merged_County_Data|
 |---|---|
